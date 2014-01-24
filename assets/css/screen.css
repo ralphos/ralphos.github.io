@@ -578,11 +578,27 @@ h1.blog-title span {
     text-decoration: none;
 }
 
+.post-excerpt {
+  margin-top: 1.6rem;
+}
+
 .post-excerpt p {
-    margin: 1.6rem 0 0 0;
+    //margin: 1.6rem 0 0 0;
     font-size: 1em;
     line-height: 1.8em;
+    display: inline;
 }
+
+.post-excerpt a {
+  text-decoration: none;
+  padding-left: 0.5rem;
+  color: #bf1e2e;
+}
+
+.post-excerpt a:hover {
+  opacity: 0.75;
+}
+
 
 .post-meta {
     display: inline-block;
