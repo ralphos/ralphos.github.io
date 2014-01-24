@@ -1,6 +1,6 @@
 # Ralph on Rails
 
-This is the repository for my personal blog - Ralph on Rails. It's a Jekyll blog
+This is the repository for my personal blog - [Ralph on Rails](http://www.ralphonrails.com). It's a Jekyll blog
 using a customized version of Ghost's default theme [Casper](https://github.com/tryghost/casper).
 Feel free to fork, change, modify and re-use it.
 
