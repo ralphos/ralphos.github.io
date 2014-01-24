@@ -1,4 +1,4 @@
-/* ==========================================================================
+* ==========================================================================
    Table of Contents
    ========================================================================== */
 
@@ -76,7 +76,6 @@
     content: "\e004";
 }
 
-
 /* ==========================================================================
    2. General - Setting up some base styles
    ========================================================================== */
@@ -90,10 +89,13 @@ html {
 body {
     height: 100%;
     max-height: 100%;
-    font-family: 'Noto Serif', serif;
+    //font-family: 'Noto Serif', serif;
+    font-family: 'calluna', georgia, serif;
+    font-weight: 400;
     font-size: 2.0rem;
     line-height: 1.6em;
-    color: #3A4145;
+    color: #222;
+    -webkit-font-smoothing: antialiased;
 }
 
 ::-moz-selection {
@@ -113,7 +115,7 @@ h4, h5, h6 {
     text-rendering: optimizeLegibility;
     line-height: 1;
     margin-top: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'proxima-nova', sans-serif;
 }
 
 h1 {
@@ -124,10 +126,11 @@ h1 {
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     line-height: 1.2em;
     letter-spacing: -1px;
     text-indent: -2px;
+    font-weight: 700;
 }
 
 h3 {
@@ -152,7 +155,7 @@ a {
 }
 
 a:hover {
-    color: #57A3E8;
+    color: #bf1e2e;
 }
 
 h1 a, h2 a, h3 a,
@@ -356,6 +359,7 @@ margin on the iframe, cause it breaks stuff. */
 .vertical {
     display: table-cell;
     vertical-align: middle;
+    background: rgba(254, 68, 68, 0.9);
 }
 
 
@@ -368,12 +372,43 @@ margin on the iframe, cause it breaks stuff. */
     position: relative;
     display: table;
     width: 100%;
-    height: 60%;
-    margin-bottom: 5rem;
-    text-align: center;
+    //height: 60%;
+    height: 10%;
+    //margin-bottom: 5rem;
+    //text-align: center;
     color: #fff;
     background: #303538 no-repeat center center;
     background-size: cover;
+    background-color: #1c2334
+}
+
+.site-intro-container {
+  display: table;
+  width: 100%;
+  height: 20%;
+  background-color: #1a1d24;
+}
+
+.site-intro {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.site-intro h3 {
+  margin-bottom: 0;
+  color: #f0f0f0;
+  font-weight: 100;
+  font-size: 4rem;
+}
+
+.site-intro h3 span {
+  color: #bf1e2e;
+}
+
+.site-head .navbar {
+  max-width: 940px;
+  margin: auto;
 }
 
 .blog-logo {
@@ -391,11 +426,23 @@ margin on the iframe, cause it breaks stuff. */
 
 /* The details of your blog. Defined in ghost/settings/ */
 .blog-title {
-    margin: 10px 0 10px 0;
+    padding: 20px 0 15px 0;
     font-size: 5rem;
     letter-spacing: -1px;
-    font-weight: bold;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'proxima-nova', sans-serif;
+}
+
+h1.blog-title {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.8em;
+  display: inline-block;
+  font-weight: 700;
+}
+
+h1.blog-title span {
+  color: #bf1e2e;
 }
 
 .blog-description {
@@ -407,14 +454,99 @@ margin on the iframe, cause it breaks stuff. */
     letter-spacing: 0;
 }
 
+/* The navbar for the blog */
+
+.site-head-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  float: right;
+  padding-top: 23px;
+}
+
+.site-head-content ul li {
+  display: inline;
+  padding-right: 1.8em;
+}
+
+.site-head-content ul li:last-child {
+  padding-right: 0;
+}
+
+.site-head-content ul li a {
+  text-decoration: none;
+  font-family: 'proxima-nova', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  text-shadow: none;
+  color: #fff;
+  display: inline-block;
+  line-height: 1.4em;
+}
+
+.site-head-content ul li a.hire {
+  background-color: #bf1e2e;
+  padding: 0.3125em 0.625em;
+  border-radius: 0.1875em;
+  color: #fff;
+  display: inline;
+  -webkit-transition: 0.1s all linear;
+  -moz-transition: 0.1s all linear;
+  transition: 0.1s all linear;
+}
+
+
+.site-head-content ul li a.hire:hover {
+  background-color: #9C1C29;
+  border-bottom: none;
+}
+
+.site-head-content ul li a:hover {
+  color: #d9d9d9;
+  border-bottom: 2px solid #bf1e2e;
+  -webkit-transition: 0.1s all linear;
+  -moz-transition: 0.1s all linear;
+  transition: 0.1s all linear;
+}
+
+.site-head-content ul li a.active {
+  color: #d9d9d9;
+  border-bottom: 2px solid #bf1e2e;
+}
+/* About Page */
+
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  border-radius: 50%;
+}
+
+.profile h3 {
+  font-size: 1.5em;
+  margin: 0.5em 0 0;
+}
+
+.profile p {
+  font-size: 0.9em;
+  margin: 0;
+  border-bottom: #EBF2F6 1px solid;
+  padding-bottom: 1.6em;
+}
+
 /* Every post, on every page, gets this style on its <article> tag */
+
 .post {
     position: relative;
     width:80%;
     max-width: 700px;
     margin: 4rem auto;
     padding-bottom: 4rem;
-    border-bottom: #EBF2F6 1px solid;
+    //border-bottom: #EBF2F6 1px solid;
     word-break: break-word;
     hyphens: auto;
 }
@@ -448,14 +580,14 @@ margin on the iframe, cause it breaks stuff. */
 
 .post-excerpt p {
     margin: 1.6rem 0 0 0;
-    font-size: 0.9em;
-    line-height: 1.6em;
+    font-size: 1em;
+    line-height: 1.8em;
 }
 
 .post-meta {
     display: inline-block;
     margin: 0 0 5px 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'proxima-nova', sans-serif;
     font-size: 1.5rem;
     color: #9EABB3;
 }
@@ -510,6 +642,28 @@ margin on the iframe, cause it breaks stuff. */
     display: block;
     font-size: 1.4rem;
     line-height: 1.5em;
+}
+
+.category-container {
+  background-color: #9C1C29;
+}
+
+.category-container .category {
+  position: relative;
+  width: 80%;
+  max-width: 940px;
+  margin: auto;
+  padding: 1.8em 0;
+}
+
+.category-container .category h3 {
+  margin-bottom: 0;
+  display: inline-block;
+  color: #fff;
+  font-weight: 100;
+  margin-right: 0.3em;
+  font-size: 3.2rem;
+  text-transform: capitalize;
 }
 
 /* ==========================================================================
@@ -569,6 +723,7 @@ margin on the iframe, cause it breaks stuff. */
 /* Create some space to the right for the share links */
 .post-footer .author {
     margin-right: 180px;
+    padding-bottom: 4rem;
 }
 
 /* Drop the share links in the space to the right.
@@ -592,6 +747,14 @@ margin on the iframe, cause it breaks stuff. */
 
 .post-footer .share a:hover {
     color: #50585D;
+}
+
+.post-footer .disqus {
+  border-top: #EBF2F6 1px solid;
+}
+
+h1.post-title {
+  font-size: 4rem;
 }
 
 
@@ -941,6 +1104,47 @@ margin on the iframe, cause it breaks stuff. */
         font-size: 1.1rem;
     }
 
+}
+
+/* Work Page */
+.work {
+    position: relative;
+    width:80%;
+    max-width: 700px;
+    margin: 4rem auto;
+    padding-bottom: 4rem;
+    //border-bottom: #EBF2F6 1px solid;
+    word-break: break-word;
+    hyphens: auto;
+    text-align: center;
+}
+
+.work h1 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  //border-bottom: #EBF2F6 1px solid;
+  padding-bottom: 1em;
+  margin-bottom: 0;
+  color: #bf1e2e;
+  letter-spacing: 1px;
+}
+
+.work h2 {
+  font-weight: 500;
+  margin-bottom: 0;
+  padding-top: 1em;
+  border-top: #EBF2F6 1px solid;
+}
+
+.work p {
+  margin-top: 0.8em;
+  margin-bottom: 3em;
+}
+
+.work img {
+  -webkit-mask-image: -webkit-gradient(linear, left 65%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  max-width: 575px;
+  //max-height: 500px;
 }
 
 /* ==========================================================================

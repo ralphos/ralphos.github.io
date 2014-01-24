@@ -21,8 +21,8 @@ profile_image: 'assets/images/profile-pic.png'
 
       <ul>
         <li><a href='{{site.baseurl}}'> Blog </a></li>
-        <li><a href='{{site.baseurl}}{{ page.about }}' class="active"> About me </a></li>
-        <li><a href='{{site.baseurl}}{{ page.work }}'> Projects </a></li>
+        <li><a href='{{site.baseurl}}{{ page.about }}'> About me </a></li>
+        <li><a href='{{site.baseurl}}{{ page.work }}' class="active"> Projects </a></li>
         <li><a href='mailto:wintle.ralph@gmail.com' class='hire'> Hire me </a></li>
       </ul>
     </div>
@@ -30,19 +30,14 @@ profile_image: 'assets/images/profile-pic.png'
 </header>
 
 <main class="content" role="main">
-    <article class="post">
+    <div class="work">
 
-    <!--<h1 class="post-title">{{ page.title }}</h1> -->
-    <div class="profile">
-      <img src="{{ page.profile_image }}" alt="Profile Picture of Ralph" />
-      <h3>Hi I'm Ralph!</h3>
-      <p>Your next kick-ass Ruby Developer</p>
-    </div>
+        <h1>Stuff I've made</h1>
 
         <section class="post-content">
             {{content}}
         </section>
 
-    </article>
+    </div>
 
 </main>

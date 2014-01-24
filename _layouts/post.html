@@ -1,31 +1,52 @@
 ---
 layout: default
-disqus: false
+disqus: true
 archive: false
+about: 'about.html'
+work: 'work.html'
 ---
+
+<header class="site-head">
+  <div class="navbar">
+    <div class="site-head-content" class="inner">
+      {% if page.logo %}
+        <a class="blog-logo" href="{{ site.baseurl }}">
+          <img src="{{ page.logo}}" alt="Blog Logo" />
+        </a>
+      {% endif %}
+      <a href="{{ site.baseurl }}">
+        <h1 class="blog-title">
+          Ralph on <span>Rails</span>
+        </h1>
+      </a>
+
+      <ul>
+        <li><a href='{{site.baseurl}}' class="active"> Blog </a></li>
+        <li><a href='{{site.baseurl}}{{ page.about }}'> About me </a></li>
+        <li><a href='{{site.baseurl}}{{ page.work }}'> Projects </a></li>
+        <li><a href='mailto:wintle.ralph@gmail.com' class='hire'> Hire me </a></li>
+      </ul>
+    </div>
+  </div>
+</header>
 
 <main class="content" role="main">
 
+    <div class="category-container">
+      <div class="category">
+        {% if page.categories %}
+          {% for category in page.categories %}
+          <h3>{{category}}</h3>
+          {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+
     <article class="post">
-        <header class="post-header">
-            <a id="blog-logo" href="{{site.baseurl}}">
-                {% if site.logo %}
-                    <img src="{{site.logo}}" alt="{{ site.name }}" />
-                {% else %}
-                    <span class="blog-title">{{ site.name }}</span>
-                {%endif%} 
-            </a>
-        </header>
-        
+
         <span class="post-meta">
-        	<time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
-        	{% if page.categories %}
-        		on
-	        	{% for category in page.categories %}
-	        	    {{category}}
-	        	{% endfor %}
-	        {% endif %}
-       	</span>
+        <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
+       </span>
 
         <h1 class="post-title">{{ page.title }}</h1>
 
@@ -48,13 +69,13 @@ archive: false
         	<!-- If we want to display author's name and bio -->
             {% if site.author %}
                 <section class="author">
-                	<header> <a href="{{ site.baseurl }}"> <img class="profile" src="/assets/images/profile.png" alt="Author's profile picture"></a></header>
+                	<header> <a href="{{ site.baseurl }}"> <img class="profile" src="/assets/images/profile-pic.png" alt="Author's profile picture"></a></header>
                 	<article>
                 		<!-- Author Name -->
                     	<h4> {{ site.author }} </h4>
                     	<!-- Author Bio -->
                     	<p> 
-                    		Here goes the author description. You might want to place some links too in here
+                        I'm a Ruby Developer and Starter League Alumni who has just moved down to Sydney, Australia. I use this blog to document my Rails code and show some useful tips for building your startup.
                     	</p>
                     </article>
                 </section>                
@@ -81,7 +102,7 @@ archive: false
             	<div id="disqus_thread"></div>
             	<script type="text/javascript">
 
-            	    var disqus_shortname = ''; 
+            	    var disqus_shortname = 'ralphonrails';
             		var disqus_developer = 0; // developer mode is on
             	    (function() {
             	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
