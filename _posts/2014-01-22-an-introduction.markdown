@@ -12,4 +12,4 @@ Currently I'm focusing on creating well tested applications using an outside in 
 
 In addition to Rails stuff I'll also occasionally post a few 'practical tips' -  basically things you need to do when building a startup that aren't so much related to programming.
 
-If you hiring Ruby Developers (prefereably in Sydney, Australia) please reach out to me via [Twitter](https://twitter.com/ralphwintle) or [email](mailto:wintle.ralph@gmail.com) so we can discuss!
+If you're hiring Ruby Developers (prefereably in Sydney, Australia) please reach out to me via [Twitter](https://twitter.com/ralphwintle) or [email](mailto:wintle.ralph@gmail.com) so we can discuss!
