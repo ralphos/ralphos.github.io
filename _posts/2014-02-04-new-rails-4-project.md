@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "How I set up a new Rails Project"
-date: 2014-02-04 10:50:21
 categories: Rails
 published: true
 ---
