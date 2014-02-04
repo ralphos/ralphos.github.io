@@ -1,0 +1,31 @@
+---
+layout: nil
+---
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>www.ralphonrails.com</title>
+  <link href="http://www.ralphonrails.com/"/>
+  <link type="application/atom+xml" rel="self" href="http://www.ralphonrails.com/atom.xml"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>http://www.ralphonrails.com/</id>
+  <author>
+    <name>Ralph Wintle</name>
+    <email>wintle.ralph@gmail.com</email>
+  </author>
+
+  {% for post in site.posts %}
+  <entry>
+    <id>http://www.ralphonrails.com{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="http://www.ralphonrails.com{{ post.url }}"/>
+    <title>{{ post.title | xml_escape }}</title>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <author>
+      <name>Ralph Wintle</name>
+      <uri>http://www.ralphonrails.com/</uri>
+    </author>
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+  {% endfor %}
+
+</feed>
