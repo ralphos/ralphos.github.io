@@ -405,6 +405,7 @@ margin on the iframe, cause it breaks stuff. */
   color: #f0f0f0;
   font-weight: 100;
   font-size: 4rem;
+  margin-top: 0;
 }
 
 .site-intro h3 span {
