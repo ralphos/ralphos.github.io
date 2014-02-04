@@ -1,6 +1,6 @@
 name: Ralph on Rails
 description: "I'm a Ruby on Rails developer in Sydney, Australia."
-meta_description: "Ralph on Rails - My Ruby on Rails Blog"
+meta_description: "Ralph on Rails - This is my Ruby on Rails Blog"
 
 markdown: redcarpet
 pygments: true
