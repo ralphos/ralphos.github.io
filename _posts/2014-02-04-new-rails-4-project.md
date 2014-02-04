@@ -39,7 +39,7 @@ Create a configuration file for Unicorn at config/unicorn.rb
 
     $ touch config/unicorn.rb
 
-and copy the following
+and copy the following into Unicorn.rb
 
 {% highlight ruby %}
 worker_processes Integer(ENV["WEB_CONCURRENCY"] || 3)
