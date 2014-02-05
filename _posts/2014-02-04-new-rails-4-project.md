@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How I set up a new Rails Project"
+title:  "Rails 4 with Unicorn & Foreman"
 categories: Rails
 published: true
 ---
