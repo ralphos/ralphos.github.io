@@ -119,7 +119,7 @@ your development environment.
 
 I find the `.env` file to be super useful later on when managing environment
 variables, especially when using Heroku since we're essentially using the same
-set up.
+set up. See [Heroku Config](https://github.com/ddollar/heroku-config).
 
 #### Taking Foreman for a spin
 
