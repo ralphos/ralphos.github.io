@@ -82,7 +82,7 @@ and
 
     $ heroku config:set RACK_ENV=production RAILS_ENV=production --remote production
 
-This will enable us to set different configuration variables for each environment. For example, you could add different S3 bucket credentials to your staging environment.
+We can also set different configuration variables for each environment. For example, you could add different S3 bucket credentials to your staging environment.
 
     $ heroku config:set S3_KEY=XXX --remote staging
     $ heroku config:set S3_SECRET=YYY --remote staging
