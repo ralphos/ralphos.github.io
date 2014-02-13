@@ -76,13 +76,13 @@ As you can see from the name of the spec file, I'm trying to follow a pattern of
 naming my spec files based around an actor and the action they are
 undertaking.
 
-Inside this feature spec I'll write my very first failing spec:
+Inside this feature spec I'll enter:
 
 {% highlight ruby %}
 require 'spec_helper'
 {% endhighlight %}
 
-and running it with the following command:
+and watch it fail with the following command:
 
     $ bundle exec rspec spec/features/visitor_sees_homepage_spec.rb
 
