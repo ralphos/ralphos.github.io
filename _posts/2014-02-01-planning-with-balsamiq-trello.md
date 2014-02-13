@@ -56,11 +56,10 @@ When writing user stories I apply the following pattern:
 > As a Visitor I should be able to see a homepage.
 
 Pretty straightforward. The example above is the same user story I have placed in
-my 'In Progress' board as it's the first story I'm going to tackle. NB: I also
-didn't state the reason for this story since it's quite self-explanatory.
+my 'In Progress' board as it's the first story I'm going to tackle. Note I
+didn't state the reason in the story since it's self-explanatory.
 
 Using this approach of creating low-fidelity mockups followed by user stories, you are able to break up your application into smaller, more attainable goals based directly on what you envision your application to be.
-
 
 > Tip: Remember to celebrate small wins - each user story marked as complete
 > means your one step closer to building your startup!
