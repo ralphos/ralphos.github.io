@@ -62,7 +62,7 @@ didn't state the reason in the story since it's self-explanatory.
 Using this approach of creating low-fidelity mockups followed by user stories, you are able to break up your application into smaller, more attainable goals based directly on what you envision your application to be.
 
 > Tip: Remember to celebrate small wins - each user story marked as complete
-> means your one step closer to building your startup!
+> means you're one step closer to building your startup!
 
 The above is a fairly simplistic approach which highlights two
 very important tools for me when starting a new project. I have found the ability to visualize and break down the project into manageable pieces to be quite effective, and recommend you to do the same.
