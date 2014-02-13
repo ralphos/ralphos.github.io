@@ -20,10 +20,7 @@ be driven by the actions a user takes on the site. We'll then drop down to the
 inner layer of our application, to unit test individual methods in our Models.
 
 We'll use RSpec as our testing framework over Test::Unit because the syntax
-encourages human readable tests.
-
-We'll also use a Ruby gem called Capybara in conjunction with Rspec, to include steps in our specs such as:
-
+encourages human readable tests. We'll also use a Ruby gem called Capybara in conjunction with Rspec, to include steps in our specs such as:
 
 {% highlight ruby %}
 visit root_path
@@ -121,7 +118,7 @@ Hopefully this gives you an idea as regards to applying a TDD approach when
 building your next application!
 
 P.S. You may also want to consider adding other gems to your test environment such as [Factory
-Girl] [1] for test data, [Shoulda Matchers][2] for common RSpec matchers, [Timecop][3] for testing time, [Launchy][4] to use Capybara's `save_and_open_page` commanda, and later on [Capybara-webkit][5] for headless browser testing and [Database Cleaner][6] to ensure a clean state for testing.
+Girl] [1] for test data, [Shoulda Matchers][2] for common RSpec matchers, [Timecop][3] for testing time, [Launchy][4] to use Capybara's `save_and_open_page` command, and perhaps later on [Capybara-webkit][5] for headless browser testing and [Database Cleaner][6] to ensure a clean state for testing.
 
 
 [1]: https://github.com/thoughtbot/factory_girl_rails 'Factory Girl Rails'
