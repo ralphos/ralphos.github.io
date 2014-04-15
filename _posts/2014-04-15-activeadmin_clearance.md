@@ -80,15 +80,15 @@ def authenticate_admin_user!
 end
 {% endhighlight %}
 
-As it says, this method will simply redirect to Clearance's `sign_in_path` unless the user is an admin, which is defined in our `User.rb`
+As it says, this method will simply redirect to Clearance's `sign_in_path` unless the user is an admin, which is defined in our `User.rb` as
 
 {% highlight ruby %}
 def admin?
-  self.email && ENV['ADMIN_EMAILS'].to_s.include?(self.email)
+  email && ENV['ADMIN_EMAILS'].to_s.include?(email)
 end
 {% endhighlight %}
 
-To check if you're an admin we first see if you have an email address and then we see if that email address is included in our ADMIN_EMAIL environment variable, which can be found in a `.env` file.
+To check if you're an admin we first see if you have an email address and then we see if that email address is included in our ADMIN_EMAILS environment variable, which can be found in a `.env` file.
 
 `ADMIN_EMAILS=email@example.com,another_email@example.com`
 
