@@ -29,6 +29,7 @@
    ========================================================================== */
 
 /* Import the font file with the icons in it */
+
 @font-face {
     font-family: 'icons';
     src:url('../fonts/icons.eot');
@@ -41,10 +42,11 @@
 }
 
 /* Apply these base styles to all icons */
-.icon-ghost:before, 
-.icon-feed:before, 
-.icon-twitter:before, 
-.icon-google-plus:before, 
+
+.icon-ghost:before,
+.icon-feed:before,
+.icon-twitter:before,
+.icon-google-plus:before,
 .icon-facebook:before {
     font-family: 'icons';
     speak: none;
@@ -57,7 +59,7 @@
     text-decoration: none;
 }
 
-/* Each icon is created by inserting the corret character into the 
+/* Each icon is created by inserting the corret character into the
    content of the :before pseudo element. Like a boss. */
 .icon-ghost:before {
     content: "\e000";
