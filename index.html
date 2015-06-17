@@ -3,8 +3,6 @@ layout: default
 title: Home
 cover: false
 # cover: 'assets/images/laptop.png'
-about: 'about.html'
-work: 'work.html'
 ---
 
 <header class="site-head" {% if page.cover %} style="background-image: url({{ page.cover }})"{% endif%}>
@@ -24,9 +22,6 @@ work: 'work.html'
       </a>
 
       <ul>
-        <li><a href='{{site.baseurl}}' class="active"> Blog </a></li>
-        {% if page.about %} <li><a href='{{site.baseurl}}{{ page.about }}'> About me </a></li> {% endif %}
-        {% if page.work %} <li><a href='{{site.baseurl}}{{ page.work }}'> Projects </a></li> {% endif %}
         <li><a href='mailto:wintle.ralph@gmail.com' class='hire'> Hire me </a></li>
       </ul>
     </div>

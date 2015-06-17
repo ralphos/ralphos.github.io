@@ -2,8 +2,6 @@
 layout: default
 disqus: true
 archive: false
-about: 'about.html'
-work: 'work.html'
 ---
 
 <header class="site-head">
@@ -14,16 +12,13 @@ work: 'work.html'
           <img src="{{ page.logo}}" alt="Blog Logo" />
         </a>
       {% endif %}
-      <a href="{{ site.baseurl }}">
+      <a href="/">
         <h1 class="blog-title">
           Ralph on <span>Rails</span>
         </h1>
       </a>
 
       <ul>
-        <li><a href='{{site.baseurl}}' class="active"> Blog </a></li>
-        <li><a href='{{site.baseurl}}{{ page.about }}'> About me </a></li>
-        <li><a href='{{site.baseurl}}{{ page.work }}'> Projects </a></li>
         <li><a href='mailto:wintle.ralph@gmail.com' class='hire'> Hire me </a></li>
       </ul>
     </div>
