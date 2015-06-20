@@ -96,18 +96,18 @@ body {
     font-weight: 400;
     font-size: 2.0rem;
     line-height: 1.6em;
-    color: #222;
+    color: #2e303a;
     -webkit-font-smoothing: antialiased;
 }
 
 ::-moz-selection {
-    color: #222;
+    color: #2e303a;
     background: #D6EDFF;
     text-shadow: none;
 }
 
 ::selection {
-    color: #222;
+    color: #2e303a;
     background: #D6EDFF;
     text-shadow: none;
 }
@@ -133,7 +133,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3.5rem;
+    font-size: 1.3em;
     line-height: 1.2em;
     letter-spacing: -1px;
     text-indent: -2px;
@@ -141,7 +141,7 @@ h2 {
 }
 
 h3 {
-    font-size: 3.5rem;
+    font-size: 1.3em;
 }
 
 h4 {
@@ -375,52 +375,40 @@ margin on the iframe, cause it breaks stuff. */
    ========================================================================== */
 
 /* Big cover image on the home page */
-.site-head {
+header.main {
     position: relative;
     display: table;
     width: 100%;
-    //height: 60%;
-    //height: 10%;
-    //margin-bottom: 5rem;
-    //text-align: center;
-    color: #fff;
-    background: #303538 no-repeat center center;
-    background-size: cover;
-    background-color: #1c2334
+    text-align: center;
+    color: #303538;
+    padding-top: 70px;
+    border-top: 6px solid #303538;
 }
 
-.site-intro-container {
-  display: table;
-  width: 100%;
-  height: 20%;
-  background-color: #1a1d24;
+header img {
+  border-radius: 50%;
+  height: 85px;
 }
 
-.site-intro {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
+header a {
+  color: #303538;
+  display: block;
 }
 
-.site-intro h3 {
-  margin-bottom: 0;
-  color: #f0f0f0;
-  font-weight: 100;
-  font-size: 4rem;
-  margin-top: 0;
+header p {
+  margin: 0;
+  padding-bottom: 70px;
+  border-bottom: 1px solid #f4f5f6;
+  color: #6e7181;
 }
 
-.site-intro h3 span {
-  color: #bf1e2e;
-}
-
-.site-head .navbar {
-  max-width: 940px;
-  margin: auto;
+header.post-head {
+  border-top: 6px solid #303538;
+  border-bottom: 1px solid #f4f5f6;
 }
 
 .blog-logo {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Yo-logo. Yolo-go. Upload one in ghost/settings/ */
@@ -438,6 +426,10 @@ margin on the iframe, cause it breaks stuff. */
     font-size: 5rem;
     letter-spacing: -1px;
     font-family: 'proxima-nova', sans-serif;
+}
+
+.blog-title.blog-post-logo {
+  padding-left: 48px;
 }
 
 h1.blog-title {
@@ -596,31 +588,40 @@ h1.blog-title span {
 
 .post-excerpt {
   margin-top: 1.6rem;
+  margin-bottom: 1.2rem;
 }
 
 .post-excerpt p {
-    //margin: 1.6rem 0 0 0;
     font-size: 1em;
     line-height: 1.8em;
     display: inline;
-}
-
-.post-excerpt a {
-  text-decoration: none;
-  color: #bf1e2e;
+    color: #6e7181;
 }
 
 .post-excerpt a:hover {
   opacity: 0.75;
 }
 
+a.read-link {
+  color: #bf1e2e;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
 
 .post-meta {
     display: inline-block;
-    margin: 0 0 5px 0;
+    margin: 0 10px 0 0;
     font-family: 'proxima-nova', sans-serif;
     font-size: 1.5rem;
     color: #9EABB3;
+}
+
+span.category {
+  color: #bf1e2e;
+  font-size: 1.6rem;
+  text-decoration: none;
+  margin-right: 2px;
 }
 
 .post-meta a {
@@ -738,6 +739,10 @@ h1.blog-title span {
   margin-top: 0;
 }
 
+.post-content p:first-of-type {
+  margin-top: 4rem;
+}
+
 /* The author credit area after the post */
 .post-footer {
     position: relative;
@@ -759,7 +764,7 @@ h1.blog-title span {
 
 /* Create some space to the right for the share links */
 .post-footer .author {
-    margin-right: 180px;
+    margin-right: 100px;
     padding-bottom: 4rem;
 }
 
@@ -792,7 +797,19 @@ h1.blog-title span {
 
 h1.post-title {
   font-size: 4rem;
+  text-align: center;
+  margin-bottom: 0.3em;
 }
+
+.post-title-info {
+  text-align: center;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #f4f5f6;
+}
+
+.post-title-info p {
+  margin: 0 !important;
+ }
 
 
 /* ==========================================================================
