@@ -68,7 +68,7 @@ And if we enter `12.0.0.1:9292` you should see in the browser:
 
 > Here's my response!
 
-Pretty straightforward. Part of the reason we're able to run the Rake application is becuase of the `.ru` extension. This signifies the file is a "rackup" file and enables us to use methods such as `run`. 
+Pretty straightforward. Part of the reason we're able to run the Rack application is becuase of the `.ru` extension. This signifies the file is a "rackup" file and enables us to use methods such as `run`. 
 
 When thinking about Rack, the key takeaways to undestand are:
 
